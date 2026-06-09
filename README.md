@@ -1,36 +1,9 @@
 # Cogni Test Pro
 
-Cogni Test Pro is an interactive, responsive, and gamified assessment application. This project highlights advanced frontend engineering skills, focusing on complex UI states, micro-interactions, and fluid animations.
+Cogni Test Pro is an interactive assessment application I designed to showcase advanced frontend engineering techniques. Instead of a standard static form, I built a dynamic quiz engine that handles complex state changes, dynamic routing, and real-time score calculations, creating a gamified experience.
 
-## Key Features
-- Dynamic Quiz Engine: Handles complex state changes, dynamic routing, and score calculations.
-- Fluid Micro-Animations: Engaging user experience with smooth transitions powered by Framer Motion.
-- Modern UI/UX: Clean, responsive design optimized for international audiences.
-- Server-Side Rendering: Utilizing Next.js App Router for optimal load times and SEO indexing.
+To achieve a native app feel, I relied heavily on Framer Motion rather than standard CSS transitions. This allowed me to implement fluid micro-animations when elements enter or exit the DOM. The UI is clean, fully responsive, and built with Tailwind CSS to ensure it scales perfectly across different devices and international audiences. 
 
-## Tech Stack
-- Framework: Next.js 14 (App Router)
-- Language: TypeScript
-- Styling: Tailwind CSS
-- Animations: Framer Motion
-- Deployment: Vercel
+Under the hood, the application uses Next.js 14 and the App Router. This architectural choice made it trivial to persist the UI shell while the underlying test engine navigates between questions asynchronously. By adopting a strict component-driven design, the codebase is split into decoupled and highly reusable modules like progress bars, question cards, and result modals, demonstrating a scalable approach to React development.
 
-## Architecture
-- Framer Motion: Used over standard CSS transitions to handle complex layout animations (like elements entering and exiting the DOM) effortlessly, giving the platform a native app feel.
-- Next.js: The App Router provides seamless layouts, making it trivial to persist the UI shell while the test engine navigates between questions asynchronously.
-- Component-Driven Design: The application is broken down into reusable, decoupled components (Progress Bars, Question Cards, Result Modals), demonstrating scalable React architecture.
-
-## Setup Instructions
-
-To run this project locally:
-
-```bash
-git clone https://github.com/mirkopierottia-ctrl/cogni-test-demo.git
-npm install
-npm run dev
-```
-
-Open http://localhost:3000 in your browser.
-
-## Author
-Mirko Pierotti - Senior Frontend Engineer
+You can run this project on your machine by cloning the repository, installing the dependencies with `npm install`, and starting the development server using `npm run dev`. The application will be available at localhost:3000.
